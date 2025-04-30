@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p id="quote"></p>  
+
+  <div class="container">
+    <h1>Pomodoro Timer 🍅</h1>
+    <div id="timer">25:00</div>
+    <div class="buttons">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Select a Song</h1>
+
+    <select id="songSelectork">
+      <option value="c:\Users\Shanmugavel M\Downloads\Kannazhaga - Masstamilan.mp3">Dhanush song</option>
+      <option value="c:\Users\Shanmugavel M\Downloads\Thalaivaa Thalaivaa.mp3">Thalapathy song</option>
+      <option value="c:\Users\Shanmugavel M\Downloads\Nee Pesa Light Ah Aasa Kooda - Masstamilan.mp3">Aasa kooda</option>
+    </select>
+
+    <div class="buttons">
+      <button onclick="playBtn">Play</button>
+      <button onclick="pauseBtn">Pause</button>
+    </div>
+
+    <audio id="audioPlayer" controls style="display: none;"></audio>
+  </div>
+  <script src="timer.js"></script>
+</body>
+</html>
